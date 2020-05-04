@@ -3,7 +3,7 @@ sudo cd
 sudo apt -f install dkms -y
 mkdir -p ~/GIT
 cd ~/GIT
-git clone --depth=1 https://github.com/anbox/anbox-modules.git
+git clone --depth=1 https://github.com/thanasxda/anbox-modules.git
 cd anbox-modules
 sudo cp anbox.conf /etc/modules-load.d/
 sudo cp 99-anbox.rules /lib/udev/rules.d/
