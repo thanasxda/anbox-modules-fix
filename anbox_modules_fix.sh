@@ -1,11 +1,11 @@
 #!/bin/bash
 ### set github dir
 git=~/GIT
-dir=linux54
+dir=anbox-modules
 sudo apt -f install dkms -y
 mkdir -p $git
 cd $git && sudo rm -rf $dir
-git clone --depth=1 https://gitlab.com/gobudgie/anbox-modules $dir
+git clone --depth=1 https://github.com/thanasxda/anbox-modules.git
 cd $dir
 sudo cp anbox.conf /etc/modules-load.d/
 sudo cp 99-anbox.rules /lib/udev/rules.d/
