@@ -15,6 +15,8 @@ sudo dkms install anbox-ashmem/1
 sudo dkms install anbox-binder/1
 sudo modprobe ashmem_linux
 sudo modprobe binder_linux
+sudo modprobe ashmem
+sudo modprobe binder
 lsmod | grep -e ashmem_linux -e binder_linux
 ls -alh /dev/binder /dev/ashmem
 echo DONE...
